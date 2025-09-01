@@ -22,7 +22,7 @@ def home():
                 body: JSON.stringify({ message: mensagem })
             })
             .then(response => response.json())
-            .then(data => alert("✅ Bloco minerado!\\n" + JSON.stringify(data.block, null, 2)))
+            .then(data => alert(" Bloco minerado!\\n" + JSON.stringify(data.block, null, 2)))
             .catch(error => alert("Erro ao minerar: " + error));
         }
         </script>
