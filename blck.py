@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     return '''
-        <h1>Blockchain da Lorrany 😄</h1>
+        <h1>Blockchain</h1>
         <form action="/mine_block" method="post" onsubmit="event.preventDefault(); enviarMensagem();">
             <input type="text" id="mensagem" placeholder="Escreva sua mensagem">
             <button type="submit">Minerar bloco com mensagem</button>
